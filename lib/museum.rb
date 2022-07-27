@@ -23,6 +23,25 @@ class Museum
     @patrons << patron
   end
 
-
+  def patrons_by_exhibit_interest
+    interest_hash = Hash.new(0)
+    @exhibits.each do |exhibit|
+      @patrons.each do |patron|
+        if patron.interests.include?(exhibit.name)
+          interest_hash[exhibit] = [patron]
+        # else
+        #   interest_hash[exhibit] = []
+        end
+      end
+      
+     end
+     require 'pry';binding.pry
+     interest_hash
+    end
+    
+   
+    
+    
+  
 
 end
