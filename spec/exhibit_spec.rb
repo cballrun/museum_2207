@@ -8,15 +8,16 @@ describe Exhibit do
   end
 
   it 'exists' do
+    
     expect(@exhibit).to be_a(Exhibit)
   end
 
   it 'has a name' do
-    expect(@exhibit.name).to be_("Gems and Minerals")
+    expect(@exhibit.name).to eq("Gems and Minerals")
   end
 
   it 'has a cost' do
-    expect(@exhibit.cost).to be_(0)
+    expect(@exhibit.cost).to eq(0)
   end
 
 end
