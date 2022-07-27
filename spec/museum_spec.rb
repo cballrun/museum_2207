@@ -47,7 +47,7 @@ describe Museum do
     @dmns.admit(@patron_2)
     @dmns.admit(@patron_3)
 
-    expect(@dmns.patrons).to eq(@patron_1, @patron_2, @patron_3)
+    expect(@dmns.patrons).to eq([@patron_1, @patron_2, @patron_3])
   end
 
 
