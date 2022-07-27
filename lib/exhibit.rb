@@ -1,6 +1,5 @@
 class Exhibit
-  attr_reader :attributes,
-              :name,
+  attr_reader :name,
               :cost
 
   def initialize(attributes)
