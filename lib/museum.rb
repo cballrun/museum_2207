@@ -35,7 +35,6 @@ class Museum
       end
       
      end
-     require 'pry';binding.pry
      interest_hash
     end
     
