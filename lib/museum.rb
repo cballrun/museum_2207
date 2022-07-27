@@ -11,6 +11,12 @@ class Museum
     @exhibits << exhibit
   end
 
+  def recommend_exhibit(patron)
+    recommended_exhibits = []
+    if patron.interests.include?()
+
+  end
+
 
 
 end
