@@ -39,8 +39,8 @@ describe Museum do
 
   it 'can admit patrons' do
     expect(@dmns.patrons).to eq([])
-    @patron_1.add_interest("Dead Sea Scrolls")
     @patron_1.add_interest("Gems and Minerals")
+    @patron_1.add_interest("Dead Sea Scrolls")
     @patron_2.add_interest("Dead Sea Scrolls")
     @patron_3.add_interest("Dead Sea Scrolls")
     @dmns.admit(@patron_1)
@@ -49,6 +49,12 @@ describe Museum do
 
     expect(@dmns.patrons).to eq([@patron_1, @patron_2, @patron_3])
   end
+
+  it 'can create a hash with an exhibit as the key and the interested patron as the values' do
+    expect(@dmns.patrons_by_exhibit_interest).to eq({@gems_and_minerals => [@patron_1], @dead_sea_scrolls => [@patron_1, @patron_2, @patron_3], @imax => []})
+  end
+
+
 
 
 
