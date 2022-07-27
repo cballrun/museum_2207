@@ -24,10 +24,6 @@ describe Museum do
     expect(@dmns.name).to eq("Denver Museum of Nature and Science")
   end
 
-  it 'has exhibits' do
-    expect(@dmns.exhibits).to eq([])
-  end
-
   it 'can add exhibits' do
     expect(@dmns.exhibits).to eq([@gems_and_minerals, @dead_sea_scrolls, @imax])
   end

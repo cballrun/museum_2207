@@ -3,6 +3,7 @@ class Patron
               :spending_money,
               :interests
               
+              
 
   def initialize(name, spending_money)
     @name = name
